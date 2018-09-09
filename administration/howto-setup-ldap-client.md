@@ -1,11 +1,11 @@
-# LDAP details
+# HOWTO setup LDAP client
+
+## LDAP details
 
 You need the following LDAP details:
 
 * LDAP server: usually ldap://<ip>, for instance 192.168.1.1
 * root domain: usually dc=<organization>,dc=<country>, for instance dc=exampleorg,dc=com
-
-# Setup LDAP client
 
 ## PAM and NSS setup
 
