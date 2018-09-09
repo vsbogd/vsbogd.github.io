@@ -65,6 +65,11 @@ VBoxManage storageattach ${VMNAME} --storagectl sata1 --port 0 --device 0 --type
 
 ## Start/stop VM
 
+Show VM information:
+```
+VBoxManage showvminfo ${VMNAME} | less
+```
+
 Start VM:
 ```
 VBoxHeadless --startvm ${VMNAME}
