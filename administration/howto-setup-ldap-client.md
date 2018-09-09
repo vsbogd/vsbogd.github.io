@@ -53,3 +53,22 @@ Without homedir user can login using console only.
 $ sudo cp -R /etc/skel /home/<username>
 $ sudo chown -R <username>:<usergroup> /home/<username>
 ```
+
+## References
+
+PAM, NSS, AutoFS sorted by usefullness:
+- [Debian handbook](https://debian-handbook.info/browse/stable/sect.ldap-directory.html)
+- [Debian Wiki LDAP NSS](https://wiki.debian.org/LDAP/NSS)
+- [Debian Wiki LDAP PAM](https://wiki.debian.org/LDAP/PAM)
+- [HOWTO change password on LDAP server](https://www.digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server)
+- [Debian Wiki LDAP](https://wiki.debian.org/LDAP)
+- [LDAP HOWTO](http://www.tldp.org/HOWTO/LDAP-HOWTO/)
+- [HOWTO configure AutoFS in LDAP](http://sadiquepp.blogspot.com/2009/02/how-to-configure-autofs-maps-in-ldap.html)
+- [AutoFS in LDAP](https://help.ubuntu.com/community/AutofsLDAP)
+
+Kerberos related:
+- [Debian Wiki LDAP Kerberos](https://wiki.debian.org/LDAP/Kerberos)
+- [SpinLockSolutions Kerberos](http://techpubs.spinlocksolutions.com/dklar/kerberos.html)
+- [SpinLockSolutions LDAP](http://techpubs.spinlocksolutions.com/dklar/ldap.html)
+- [Ubuntu Kerberos](https://help.ubuntu.com/community/Kerberos)
+- [Ubuntu LDAP client authentication](https://help.ubuntu.com/community/LDAPClientAuthentication)
