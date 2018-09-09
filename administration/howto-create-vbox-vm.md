@@ -1,12 +1,12 @@
-Full user manual: https://www.virtualbox.org/manual/ch08.html
+Full user manual: [https://www.virtualbox.org/manual/ch08.html](https://www.virtualbox.org/manual/ch08.html)
 
 Things you need to define:
 ```
 export VMNAME=<name>
 export HDDNAME=./HardDisks/${VMNAME}.vdi
-export SSHPORT=35022
-export VNCPORT=35901
-export HOST=ice
+export SSHPORT=<ssh-to-use-from-host-machine>
+export VNCPORT=<vnc-to-use-from-host-machine>
+export HOST=<host-machine>
 ```
 
 Create hard drive for the guest system.
