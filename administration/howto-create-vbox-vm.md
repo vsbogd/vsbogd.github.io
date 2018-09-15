@@ -77,7 +77,7 @@ VBoxHeadless --startvm ${VMNAME}
 
 Stop VM:
 ```
-VBoxManage controlvm ${VMNAME} apipowerbutton
+VBoxManage controlvm ${VMNAME} acpipowerbutton
 ```
 
 ## Install operating system
