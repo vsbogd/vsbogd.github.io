@@ -19,7 +19,7 @@ Before starting doing something you should think about the following things:
 For the sake of simplicity I will use the following variables below:
 ```
 export VMNAME=<name>
-export HDDNAME=./HardDisks/${VMNAME}.vdi
+export HDDNAME=${HOME}/.VirtualBox/HardDisks/${VMNAME}.vdi
 export SSHPORT=<ssh-to-use-from-host-machine>
 export VNCPORT=<vnc-to-use-from-host-machine>
 export HOST=<host-machine>
