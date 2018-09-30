@@ -100,3 +100,6 @@ Install operating system. Remove install disk after installation:
 VBoxManage storageattach ${VMNAME} --storagectl sata1 --port 1 --device 0 --type dvddrive --medium none
 ```
 
+Install guest additions. You can download guest additions for different virtual
+box versions at [VirtualBox downloads](http://download.virtualbox.org/virtualbox/)
+
