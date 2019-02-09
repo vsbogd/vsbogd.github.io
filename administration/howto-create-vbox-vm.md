@@ -25,6 +25,13 @@ export VNCPORT=<vnc-to-use-from-host-machine>
 export HOST=<host-machine>
 ```
 
+## Install VirtualBox
+
+Install VirtualBox itself and extension pack to make VRDP work:
+```
+sudo apt-get install virtualbox virtualbox-ext-pack
+```
+
 ## Create VM
 
 Create hard drive for the guest system.
