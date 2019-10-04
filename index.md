@@ -9,4 +9,6 @@ Administration:
   account](https://wiki.debian.org/GmailAndExim4)
 
 Coding:
+- [Using GRPC in Java Maven
+  project](./coding/using-grpc-in-java-maven-project.md)
 - Convert under_score to camelCase by sed: ```sed -E 's/([^ ])_(.)/\1\U\2/g'```
