@@ -4,7 +4,7 @@ Administration:
 - [HOWTO send test mail via SMTP](./administration/howto-send-mail-via-smtp.md)
 - [HOWTO setup LXC container](./administration/howto-create-lxc-container.md)
 - [HOWTO setup exim4 to work with Gmail
-  account](https://wiki.debian.org/GmailAndExim4)
+  account](https://wiki.debian.org/Exim4Gmail)
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
