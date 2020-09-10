@@ -8,4 +8,13 @@ Administration:
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
-- Convert under_score to camelCase by sed: ```sed -E 's/([^ ])_(.)/\1\U\2/g'```
+- Convert under_score to camelCase by sed:
+```sh
+sed -E 's/([^ ])_(.)/\1\U\2/g'
+```
+
+Network:
+- Get SSL certificates from server:
+```sh
+openssl s_client -showcerts -servername www.example.com -connect  www.example.com:443 </dev/null
+```
