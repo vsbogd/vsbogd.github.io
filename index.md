@@ -5,6 +5,10 @@ Administration:
 - [HOWTO setup LXC container](./administration/howto-create-lxc-container.md)
 - [HOWTO setup exim4 to work with Gmail
   account](https://wiki.debian.org/Exim4Gmail)
+- Make wildcard include hidden files:
+```sh
+shopt -s dotglob
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
