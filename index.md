@@ -8,6 +8,7 @@ Administration:
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
+- [HOWTO move files between Git repositories preserving history](./coding/move-files-between-git-repos-preserving-history.md)
 - Convert under_score to camelCase by sed:
 ```sh
 sed -E 's/([^ ])_(.)/\1\U\2/g'
