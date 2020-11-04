@@ -17,6 +17,10 @@ Coding:
 ```sh
 sed -E 's/([^ ])_(.)/\1\U\2/g'
 ```
+- Grep binary string:
+```sh
+grep -RobUaP 'S\x00O\x00M\x00E\x00T\x00H\x00I\x00N\x00G' <dir>
+```
 
 Network:
 - Get SSL certificates from server:
