@@ -36,3 +36,14 @@ To make sdk available for all users you need to add `android.sh` to the
 export ANDROID_SDK=/opt/android
 export PATH=${PATH}:${ANDROID_SDK}/platform-tools:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin
 ```
+
+Create new emulator instance from command line:
+```
+avdmanager create avd -n android-23-arm -k 'system-images;android-23;default;armeabi-v7a'
+```
+
+Launch emulator from command line:
+```
+cd ${ANDROID_SDK}/tools
+./emulator @android-23-arm
+```
