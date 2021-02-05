@@ -15,6 +15,7 @@ Coding:
 - [HOWTO move files between Git repositories preserving history](./coding/move-files-between-git-repos-preserving-history.md)
 - [HOWTO install Android SDK using command line tools](./coding/install-android-using-command-line.md)
 - [HOWTO install rospy ROS Noetic module to Ubuntu 18.04](./coding/install-rospy-noetic-ubuntu-1804.md)
+- [HOWTO use fluentd to post errors into Slack channel](./coding/use-fluentd-to-post-errors-to-slack.md)
 - Convert under_score to camelCase by sed:
 ```sh
 sed -E 's/([^ ])_(.)/\1\U\2/g'
