@@ -9,6 +9,11 @@ Administration:
 ```sh
 shopt -s dotglob
 ```
+- Make .deb package from source:
+```sh
+# instead of `make install`
+checkinstall
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
