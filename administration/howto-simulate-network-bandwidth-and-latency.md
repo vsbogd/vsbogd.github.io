@@ -40,3 +40,8 @@ Use netem module to simulate latency (150ms) and loss (1%):
 ```
 tc qdisc add dev $IF parent 1:1 handle 2:1 netem delay 150ms loss 1%
 ```
+
+Cleanup interface after testing:
+```
+tc qdisc del dev $IF root
+```
