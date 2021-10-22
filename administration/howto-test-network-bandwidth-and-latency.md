@@ -1,5 +1,9 @@
 # HOWTO test network bandwidth and latency
 
+Links:
+- [iPerf3](https://iperf.fr/)
+- [MTR](http://www.bitwizard.nl/mtr/)
+
 ## Prerequisites
 
 In order to measure network bandwidth you need two hosts. We will say one of
@@ -51,9 +55,3 @@ echo "Collecting bandwidth information UDP"
 iperf3 -c $HOST -p $PORT -V -4 -t 60 --get-server-output -u -b 30m
 iperf3 -c $HOST -p $PORT -V -4 -t 60 --get-server-output -u -b 30m -R
 ```
-
-## References
-
-Links:
-- [iPerf3](https://iperf.fr/)
-- [MTR](http://www.bitwizard.nl/mtr/)

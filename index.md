@@ -6,6 +6,7 @@ Administration:
 - [HOWTO setup exim4 to work with Gmail
   account](https://wiki.debian.org/Exim4Gmail)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
+- [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
 - Make wildcard include hidden files:
 ```sh
 shopt -s dotglob
