@@ -136,11 +136,11 @@ userspace processes on ther system.
 Final command for capturing:
 ```
 sudo ionice -c 1 -n 0 nice -n -20 ffmpeg \
-		-ar 44100 -thread_queue_size 1024 -f alsa -i $AUDIO \
-		-r 25 -thread_queue_size 1024 -i $VIDEO \
-		-filter_complex 'channelmap=FL-0' -filter_complex 'crop=w=700:h=556:x=8:y=0' \
-		-map 1:v  -map 0:a -codec:v ffv1 -codec:a pcm_s16le \
-		raw.mkv
+	-ar 44100 -thread_queue_size 1024 -f alsa -i $AUDIO \
+	-r 25 -thread_queue_size 1024 -i $VIDEO \
+	-filter_complex 'channelmap=FL-0' -filter_complex 'crop=w=700:h=556:x=8:y=0' \
+	-map 1:v  -map 0:a -codec:v ffv1 -codec:a pcm_s16le \
+	raw.mkv
 ```
 
 After capturing is done use `q` button to stop FFmpeg gracefully.
@@ -198,4 +198,5 @@ video before key frame without recompression.
 - [H.264 Video Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.264)
 - [MP3 Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/MP3)
 - [FFmpeg FAQ](https://ffmpeg.org/faq.html)
-
+- [VLC player](https://www.videolan.org/vlc/)
+- [Avidemux video editor](http://avidemux.sourceforge.net/)
