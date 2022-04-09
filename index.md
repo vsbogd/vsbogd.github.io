@@ -1,4 +1,5 @@
 Administration:
+- [HOWTO capture VHS video using Pinnacle Dazzle DVC100 on Linux](./administration/howto-capture-vhs.md)
 - [HOWTO create new VirtualBox VM using command line](./administration/howto-create-vbox-vm.md)
 - [HOWTO setup LDAP client](./administration/howto-setup-ldap-client.md)
 - [HOWTO send test mail via SMTP](./administration/howto-send-mail-via-smtp.md)
