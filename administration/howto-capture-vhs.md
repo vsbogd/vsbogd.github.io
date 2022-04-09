@@ -155,6 +155,9 @@ shift the audio track in the resulting video. For example if delay is -500ms
 ffmpeg -i raw.mkv -itsoffset -0.5 -i raw.mkv -map 0:v -map 1:a -codec copy shifted.mkv
 ```
 
+I found that delay can be different for different capture sessions. So be
+careful and alwasy check the synchronization after capturing.
+
 You may watch the resulting video trim and split is on several fragments using
 FFmpeg command like this:
 ```
