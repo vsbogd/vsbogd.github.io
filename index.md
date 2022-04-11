@@ -16,6 +16,10 @@ shopt -s dotglob
 # instead of `make install`
 checkinstall
 ```
+- Get SSL certificates from server:
+```sh
+openssl s_client -showcerts -servername www.example.com -connect  www.example.com:443 </dev/null
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
@@ -30,12 +34,6 @@ sed -E 's/([^ ])_(.)/\1\U\2/g'
 - Grep binary string:
 ```sh
 grep -RobUaP 'S\x00O\x00M\x00E\x00T\x00H\x00I\x00N\x00G' <dir>
-```
-
-Network:
-- Get SSL certificates from server:
-```sh
-openssl s_client -showcerts -servername www.example.com -connect  www.example.com:443 </dev/null
 ```
 
 Misc:
