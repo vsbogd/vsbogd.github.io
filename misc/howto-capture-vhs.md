@@ -23,10 +23,15 @@ device created by V4L:
 udevadm info  /dev/video* | egrep 'DEVNAME|ID_V4L_PRODUCT' | fgrep -B 1 'Dazzle'
 ```
 
-Use `arecord` command to find proper audio device:
+Use following command to find proper audio device:
 ```
-arecord -l | fgrep DVC100
+$ cat /proc/asound/cards | fgrep DVC100
+ 1 [DVC100         ]: USB-Audio - DVC100
+                      Pinnacle Systems GmbH DVC100 at usb-0000:05:00.4-1, high speed
 ```
+First column contains the number of ALSA card. It should be combined
+with `hw:` prefix to form the name of ALSA device. For the example above the
+name of the device is `hw:1`.
 
 For a sake of simplicity export names of the video and audio devices as
 environment variables:
