@@ -208,3 +208,5 @@ video before key frame without recompression.
 - [FFmpeg FAQ](https://ffmpeg.org/faq.html)
 - [VLC player](https://www.videolan.org/vlc/)
 - [Avidemux video editor](http://avidemux.sourceforge.net/)
+
+{% widget donshare providers="facebook,twitter,google,linkedin,pinterest" %}
