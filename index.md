@@ -20,6 +20,10 @@ checkinstall
 ```sh
 openssl s_client -showcerts -servername www.example.com -connect  www.example.com:443 </dev/null
 ```
+- Use socat to interact with USB/UART adapter (Ctrl+X to exit socat):
+```sh
+socat -,raw,echo=0,escape=0x18 /dev/ttyUSB0,b115200,raw,echo=0
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
