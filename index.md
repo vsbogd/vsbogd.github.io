@@ -5,6 +5,8 @@ Administration:
 - [HOWTO setup LXC container](./administration/howto-create-lxc-container.md)
 - [HOWTO setup exim4 to work with Gmail
   account](https://wiki.debian.org/Exim4Gmail)
+- [HOWTO create app password to use Google
+  services](https://support.google.com/accounts/answer/185833)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
 - [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
 - Make wildcard include hidden files:
