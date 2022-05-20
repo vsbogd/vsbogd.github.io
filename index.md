@@ -26,6 +26,10 @@ openssl s_client -showcerts -servername www.example.com -connect  www.example.co
 ```sh
 socat -,raw,echo=0,escape=0x18 /dev/ttyUSB0,b115200,raw,echo=0
 ```
+- Check keyboard and mouse X Window events:
+```sh
+xev
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
