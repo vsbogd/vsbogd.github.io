@@ -9,6 +9,8 @@ Administration:
   services](https://support.google.com/accounts/answer/185833)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
 - [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
+- Change OpenVPN key password inside config file:
+  [openvpn-change-key-pass.sh](./administration/openvpn-change-key-pass.sh)
 - Make wildcard include hidden files:
 ```sh
 shopt -s dotglob
