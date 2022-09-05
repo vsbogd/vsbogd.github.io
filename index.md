@@ -20,6 +20,10 @@ shopt -s dotglob
 # instead of `make install`
 checkinstall
 ```
+- Show SSL certificate details:
+```sh
+openssl x509 -in example.pem -text
+```
 - Get SSL certificates from server:
 ```sh
 openssl s_client -showcerts -servername www.example.com -connect  www.example.com:443 </dev/null
