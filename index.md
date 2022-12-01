@@ -36,6 +36,10 @@ socat -,raw,echo=0,escape=0x18 /dev/ttyUSB0,b115200,raw,echo=0
 ```sh
 xev
 ```
+- Run a shell with limited amount of memory:
+```sh
+systemd-run -p MemoryMax=1G -p MemorySwapMax=0 --shell
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
