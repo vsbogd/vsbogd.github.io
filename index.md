@@ -40,6 +40,10 @@ xev
 ```sh
 systemd-run -p MemoryMax=1G -p MemorySwapMax=0 --shell
 ```
+- Add PulseAudio sink which combines all other sinks:
+```sh
+pactl load-module module-combine-sink
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
