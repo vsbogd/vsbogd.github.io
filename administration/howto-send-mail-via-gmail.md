@@ -1,4 +1,4 @@
-# HOWTO setup exim4 to work with Gmail account
+# HOWTO setup Exim4 to work with Gmail account
 
 Setup Exim4 to use Gmail as an external SMTP server:
 ```
@@ -61,8 +61,20 @@ Check logs to see if email was sent successfully:
 Check if email is received by `<email-address>`. If it is Gmail address you may
 need add filtering rule to prevent email be classified as a spam.
 
+In order to redirect the local mail to the external address, edit the
+`/etc/aliases` file and add the following line:
+```
+<local-user-name>: <email-address>
+```
+and execute:
+```
+$ newaliases
+```
+in order to update aliases configuration.
+
 Links:
 - [Debian Wiki Exim4 for Gmail](https://wiki.debian.org/Exim4Gmail)
 - [Gmail mail client
   setup](https://support.google.com/mail/answer/7104828?hl=en&visit_id=638300159533347627-1330126653&rd=3)
 - [Debian Wiki Exim4](https://wiki.debian.org/Exim)
+- [How to redirect local root mail](http://blog.bobbyallen.me/2013/02/03/how-to-redirect-local-root-mail-to-an-external-email-address-on-linux/)

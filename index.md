@@ -3,8 +3,7 @@ Administration:
 - [HOWTO setup LDAP client](./administration/howto-setup-ldap-client.md)
 - [HOWTO send test mail via SMTP](./administration/howto-send-mail-via-smtp.md)
 - [HOWTO setup LXC container](./administration/howto-create-lxc-container.md)
-- [HOWTO setup exim4 to work with Gmail
-  account](./administration/howto-send-mail-via-gmail.md)
+- [HOWTO setup Exim4 to work with Gmail account](./administration/howto-send-mail-via-gmail.md)
 - [HOWTO create app password to use Google
   services](https://support.google.com/accounts/answer/185833)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
