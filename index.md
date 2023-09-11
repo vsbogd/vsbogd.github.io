@@ -4,7 +4,7 @@ Administration:
 - [HOWTO send test mail via SMTP](./administration/howto-send-mail-via-smtp.md)
 - [HOWTO setup LXC container](./administration/howto-create-lxc-container.md)
 - [HOWTO setup exim4 to work with Gmail
-  account](https://wiki.debian.org/Exim4Gmail)
+  account](./administration/howto-send-mail-via-gmail.md)
 - [HOWTO create app password to use Google
   services](https://support.google.com/accounts/answer/185833)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
