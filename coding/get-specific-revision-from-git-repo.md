@@ -4,20 +4,21 @@ Sometimes you need to get the only revision without history and need get it as
 fast as possible. For example it is useful for CI jobs. `git clone` doesn't
 allow doing this, but you can use `get fetch` instead.
 
-Code below assumes the following variables contain the parameters:
+The shell function initializes new repo, fetches the only required revision
+without history and resets `HEAD` to the fetched revision:
 ```
-export PROJECT=<dir-name>
-export PROJECT_URL=<git-remote-url>
-export PROJECT_REV=<git-revision>
-```
+git_clone_rev() {
+    dir=$1
+    url=$2
+    rev=$3
 
-The recipe initializes new repo, fetches the only required revision without
-history and resets `HEAD` to the fetched revision:
-```
-mkdir -p ${PROJECT}
-cd ${PROJECT}
-git init
-git remote add origin $PROJECT_URL
-git fetch --depth=1 origin $PROJECT_REV
-git reset --hard FETCH_HEAD
+    mkdir -p ${dir}
+    cd ${dir}
+    git init
+    git remote add origin $url
+    git fetch --depth=1 origin $rev
+    git reset --hard FETCH_HEAD
+}
+
+git_clone_rev <dir> <git-remote-url> <git-revision>
 ```
