@@ -50,6 +50,7 @@ Coding:
 - [HOWTO install Android SDK using command line tools](./coding/install-android-using-command-line.md)
 - [HOWTO install rospy ROS Noetic module to Ubuntu 18.04](./coding/install-rospy-noetic-ubuntu-1804.md)
 - [HOWTO use fluentd to post errors into Slack channel](./coding/use-fluentd-to-post-errors-to-slack.md)
+- [HOWTO get specific revision from Git repo without getting history](./coding/get-specific-revision-from-git-repo.md)
 - Convert under_score to camelCase by sed:
 ```sh
 sed -E 's/([^ ])_(.)/\1\U\2/g'
