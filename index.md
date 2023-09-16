@@ -10,6 +10,8 @@ Administration:
 - [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
 - Change OpenVPN key password inside config file:
   [openvpn-change-key-pass.sh](./administration/openvpn-change-key-pass.sh)
+- [HOWTO reset Windows 10 password using Linux](./administration/reset-windows-password.md)
+
 - Make wildcard include hidden files:
 ```sh
 shopt -s dotglob
