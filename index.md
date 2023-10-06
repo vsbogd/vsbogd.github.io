@@ -11,6 +11,7 @@ Administration:
 - Change OpenVPN key password inside config file:
   [openvpn-change-key-pass.sh](./administration/openvpn-change-key-pass.sh)
 - [HOWTO reset Windows 10 password using Linux](./administration/reset-windows-password.md)
+- [HOWTO make a Windows 10 and 11 bootable USB stick on Linux](./administration/make-windows-boot-usb-linux.md)
 
 - Make wildcard include hidden files:
 ```sh
