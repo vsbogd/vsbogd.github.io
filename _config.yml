@@ -1,3 +1,15 @@
 title: HOWTOs, tips and tricks
 plugins:
   - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path:            "googleeb525c47d4c4a595.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "yandex_b9ec0d7d904b7d40.html"
+    values:
+      sitemap:         false
