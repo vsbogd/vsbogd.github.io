@@ -8,6 +8,7 @@ Administration:
   services](https://support.google.com/accounts/answer/185833)
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
 - [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
+- [Generate OpenVPN configuration](https://github.com/vsbogd/openvpn-config-generator)
 - Change OpenVPN key password inside config file:
   [openvpn-change-key-pass.sh](https://github.com/vsbogd/openvpn-config-generator/raw/refs/heads/main/openvpn-change-key-pass.sh)
 - [HOWTO reset Windows 10 password using Linux](./administration/reset-windows-password.md)
