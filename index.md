@@ -9,7 +9,7 @@ Administration:
 - [HOWTO test network bandwidth and latency](./administration/howto-test-network-bandwidth-and-latency.md)
 - [HOWTO simulate network bandwidth and latency](./administration/howto-simulate-network-bandwidth-and-latency.md)
 - Change OpenVPN key password inside config file:
-  [openvpn-change-key-pass.sh](./administration/openvpn-change-key-pass.sh)
+  [openvpn-change-key-pass.sh](https://github.com/vsbogd/openvpn-config-generator/raw/refs/heads/main/openvpn-change-key-pass.sh)
 - [HOWTO reset Windows 10 password using Linux](./administration/reset-windows-password.md)
 - [HOWTO make a Windows 10 and 11 bootable USB stick on Linux](./administration/make-windows-boot-usb-linux.md)
 
