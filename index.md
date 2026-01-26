@@ -68,3 +68,4 @@ grep -RobUaP 'S\x00O\x00M\x00E\x00T\x00H\x00I\x00N\x00G' <dir>
 
 Misc:
 - [HOWTO capture VHS video using Pinnacle Dazzle DVC100 on Linux](./misc/howto-capture-vhs.md)
+- [HOWTO erase miniDV cassette](./misc/howto-erase-minidv.md)
