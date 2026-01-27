@@ -1,16 +1,17 @@
 # HOWTO make a bootable USB stick from isolinux ISO
 
-Usual way of writing of the ISO file onto USB stick under Linux is using dd.
-But sometimes this way doesn't work. PC just ignores USB flash drive and
-continues booting from the hard drive. For example this may happen if isolinux
-bootloader is the only bootloader used by the ISO image. In this case one need
-to repack ISO image and add new bootloader to it.
+The typical method for writing an ISO file to a USB stick in Linux is using the
+dd command. However, there are instances where this approach may fail, and the
+PC may ignore the USB flash drive, continuing to boot from the hard drive
+instead. This issue can occur when the ISO image relies solely on the isolinux
+bootloader. In such cases, it's necessary to repack the ISO image to include an
+additional bootloader.
 
 ## Prerequisites
 
-One need to install `parted`, `libarchive`, `syslinux` and `mtools` packages.
-They should be available in standard repositories. For example in Debian based
-distributions:
+You need to install the `parted`, `libarchive`, `syslinux`, and `mtools`
+packages. These packages should be available in the standard repositories. For
+example, in Debian-based distributions:
 ```
 apt-get install -y parted libarchive-tools syslinux mtools
 ```
@@ -41,7 +42,7 @@ mkfs.vfat -n BOOT ${USB_DEV}1
 
 ## Copy files to boot partition
 
-Mount source image:
+Mount source ISO image:
 ```
 mount ${USB_DEV}1 ${VFAT_MOUNT}
 bsdtar -x -f ${ISO_PATH} -C ${VFAT_MOUNT}
@@ -50,7 +51,7 @@ bsdtar -x -f ${ISO_PATH} -C ${VFAT_MOUNT}
 ## Add bootloader to the partition
 
 Copy menu and all other files from old bootloader, then replace bootloader
-files by Syslinux ones and add Syslinux menu which includes Isolinux one:
+files by syslinux ones and add syslinux menu which includes isolinux one:
 ```
 export ISOLINUX_DIR=$(find ${VFAT_MOUNT} -type d -name 'isolinux')
 export SYSLINUX_DIR=${VFAT_MOUNT}/boot/syslinux
@@ -67,7 +68,7 @@ EOF
 umount ${VFAT_MOUNT}
 ```
 
-Add bootloader to the disk:
+Install bootloader:
 ```
 syslinux --directory boot/syslinux --install ${USB_DEV}1
 dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=${USB_DEV}
