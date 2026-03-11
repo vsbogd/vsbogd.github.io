@@ -29,8 +29,7 @@ export VFAT_MOUNT=$(mktemp -d)
 
 ## Partitioning
 
-Make two partitions on USB drive, boot partition and one which contains setup
-files:
+Make a setup partition on the USB drive:
 ```
 parted ${USB_DEV} mklabel msdos
 parted ${USB_DEV} mkpart primary fat32 0% 100%
@@ -79,3 +78,5 @@ dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=${USB_DEV}
 - [USB installation medium Arch Wiki
   page](https://wiki.archlinux.org/title/USB_flash_installation_medium)
 - [Syslinux Arch Wiki page](https://wiki.archlinux.org/title/Syslinux)
+- [geteltorito tool to extract bootloader from ISO
+  image](https://github.com/rainer042/geteltorito)
