@@ -50,6 +50,13 @@ systemd-run -p MemoryMax=1G -p MemorySwapMax=0 --shell
 ```sh
 pactl load-module module-combine-sink
 ```
+- Add tag for a multiarch Docker image using Podman:
+```sh
+podman login docker.io
+podman manifest create --all <image-name>:<new-tag> docker.io/<image-name>:<existing-tag>
+podman manifest inspect <image-name>:<new-tag>
+podman manifest push --all <image-name>:<new-tag> docker.io/<image-name>:<new-tag>
+```
 
 Coding:
 - [Using GRPC in Java Maven project](./coding/using-grpc-in-java-maven-project.md)
